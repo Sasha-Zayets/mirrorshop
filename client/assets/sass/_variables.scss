@@ -1,0 +1,40 @@
+// Coloros variable
+$black: #000000;
+$white: #ffffff;
+$blue-light: #75B0F4;
+$red: #F61C0D;
+$silver: #b3b4b5;
+
+/*  Пишемо медіа запити по даному шаблону */
+$screen-max-480: "screen and (max-width: 480px)";
+
+$screen-min-340: "screen and (min-width: 340px)";
+$screen-min-360: "screen and (min-width: 360px)";
+$screen-min-370: "screen and (min-width: 370px)";
+$screen-min-380: "screen and (min-width: 380px)";
+$screen-min-420: "screen and (min-width: 420px)";
+$screen-min-460: "screen and (min-width: 460px)";
+$screen-min-480: "screen and (min-width: 480px)";
+$screen-min-576: "screen and (min-width: 576px)";
+$screen-min-768: "screen and (min-width: 768px)";
+$screen-min-992: "screen and (min-width: 992px)";
+$screen-min-1200: "screen and (min-width: 1200px)";
+$screen-min-1560: "screen and (min-width: 1560px)";
+
+/* @~ z-indexes: Example: z-index: z('modal'); */
+
+$z-indexes: (
+    'default': 1,
+);
+
+@function z($layer) {
+    @return map-get($z-indexes, $layer);
+}
+
+@function w($width, $window) {
+    @return ($width * 100vw) / $window;
+}
+
+/* @ Fonts - $font-default є за замовчуванням, і вже прописаний до body */
+
+$monserat: 'Montserrat', sans-serif;

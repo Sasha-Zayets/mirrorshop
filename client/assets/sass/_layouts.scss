@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+@media #{$screen-min-576} {
+
+	.container {
+		max-width: 570px;
+		margin: 0 auto;
+	}
+}
+
+@media #{$screen-min-768} {
+
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
+}
+
+// @media #{$screen-min-992} {
+
+// 	.container {
+// 		max-width: 990px;
+// 	}
+// }
+
+// @media #{$screen-min-1200} {
+
+// 	.container {
+// 		max-width: 1140px;
+// 	}
+// }
+
+@media #{$screen-min-1560} {
+
+	.container {
+		max-width: 1530px;
+		padding: 0 15px;
+	}
+}

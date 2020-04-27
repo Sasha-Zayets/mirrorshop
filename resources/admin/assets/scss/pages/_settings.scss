@@ -1,0 +1,53 @@
+.box-social {
+    display: flex;
+    &__item {
+        margin-right: 15px;
+        width: 22px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.check-social {
+    &__label {
+        display: block;
+        width: 22px;
+        min-height: 22px;
+        min-width: 22px;
+        height: 100%;
+    }
+    &__input:checked {
+        & + .check-social__label {
+            span {
+                filter: initial;
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.icon-viber {
+    background-image: url('/static/icons/viber.svg');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all .3s;
+}
+
+.icon-telegram {
+    background-image: url('/static/icons/telegram.svg');
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all .3s;
+}
