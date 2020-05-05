@@ -48,14 +48,6 @@
                     <PhoneList class="footer__phone-list" />
                     <SocialLinks class="footer__social-list" :iconsShow="true" />
                     
-                    <a href="https://webmaestro.com.ua/" target="__blank" class="footer__developer">
-                        <picture class="footer__webmaestro">
-                            <img src="@/static/images/wm.svg" alt="">
-                        </picture>
-                        <span class="footer__developer-label">
-                            {{ $t('footer-develop-label') }}
-                        </span>
-                    </a>
                 </div>
             </div>
             <div class="footer__copyring">
