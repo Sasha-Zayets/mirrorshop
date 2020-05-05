@@ -15,5 +15,6 @@ yarn-error.log
 .nuxt
 /dist
 /public/_nuxt
+./client/static/images/
 *.code-workspace
 .DS_Store
